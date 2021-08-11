@@ -6,17 +6,17 @@ newbee-mall 项目是一套电商系统，包括 newbee-mall 商城系统及 new
 原始工程位置： https://github.com/newbee-ltd/newbee-mall-vue3-app
 
 ## 项目运行环境
-node
-npm
-yarn
+- node
+- npm
+- yarn
 
 ## 环境安装与配置参考
-https://nodejs.org/zh-cn/
-https://www.npmjs.com/
-https://yarn.bootcss.com/
+- https://nodejs.org/zh-cn/
+- https://www.npmjs.com/
+- https://yarn.bootcss.com/
 
 ## 初始化、编译、运行方法
 项目根目录下执行如下命令：
-yarn install
-yarn build
-yarn serve
+- yarn install
+- yarn build
+- yarn serve
