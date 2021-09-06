@@ -20,3 +20,6 @@ newbee-mall 项目是一套电商系统，包括 newbee-mall 商城系统及 new
 - yarn install
 - yarn build
 - yarn serve
+
+## docker 部署
+运行脚本： ./docker_deploy.sh <api 服务 ip_地址>
