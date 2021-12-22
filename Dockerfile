@@ -5,8 +5,7 @@ RUN mkdir -p /home/nodejs/app
 WORKDIR /home/nodejs/app
 COPY . .
 
-RUN yarn install
-RUN yarn build
+RUN npm install
 
 EXPOSE 8080
-CMD ["yarn","serve"]
+CMD ["npm","run", "serve"]
