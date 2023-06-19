@@ -18,6 +18,20 @@ if [ -n "$1" ] ;then
     fi
 fi
 
+# Replace Port
+if [ -n "$2" ] ;then
+    echo "change backend Port to $2"
+    if [[ "${os_type}" == "Darwin" ]]; then
+        sed -i "" "s/28019/$2/g" src/main.js
+        sed -i "" "s/28019/$2/g" src/common/js/utils.js
+        sed -i "" "s/28019/$2/g" src/utils/axios.js
+    else
+        sed -i "s/28019/$2/g" src/main.js
+        sed -i "s/28019/$2/g" src/common/js/utils.js
+        sed -i "s/28019/$2/g" src/utils/axios.js
+    fi
+fi
+
 docker rm -f $container
 docker rmi $image
 
