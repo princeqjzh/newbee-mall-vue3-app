@@ -11,10 +11,14 @@ if [ -n "$1" ] ;then
         sed -i "" "s/localhost/$1/g" src/main.js
         sed -i "" "s/localhost/$1/g" src/common/js/utils.js
         sed -i "" "s/localhost/$1/g" src/utils/axios.js
+        sed -i "" "s/localhost/$1/g" .env
+        sed -i "" "s/localhost/$1/g" vue.config.js
     else
         sed -i "s/localhost/$1/g" src/main.js
         sed -i "s/localhost/$1/g" src/common/js/utils.js
         sed -i "s/localhost/$1/g" src/utils/axios.js
+        sed -i "s/localhost/$1/g" .env
+        sed -i "s/localhost/$1/g" vue.config.js
     fi
 fi
 
